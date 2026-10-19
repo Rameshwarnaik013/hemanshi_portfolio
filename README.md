@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Live site** | <https://hemanshi-dubey.vercel.app> — a Vercel project importing this repo as-is (framework: Other, no build, root `/`) |
+| **Live site** | <https://hemanshiportfolio-mxp3.vercel.app> — a Vercel project importing this repo as-is (framework: Other, no build, root `/`) |
 | **CV** | `Hemanshi_Dubey_CV.pdf` — one A4 page, served at `/Hemanshi_Dubey_CV.pdf` |
 | **Reel** | `reel/index.html` — a 12-second HyperFrames composition; `reel/hemanshi-reel.mp4` is its render |
 
