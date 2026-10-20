@@ -5,89 +5,88 @@
 <title>Hemanshi Dubey - CV</title>
 <style>
   @font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-normal.woff2") format("woff2"); font-weight: 300 800; font-style: normal; }
-  @font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-italic.woff2") format("woff2"); font-weight: 300 800; font-style: italic; }
   @font-face { font-family: "Inter"; src: url("../assets/fonts/inter-normal.woff2") format("woff2"); font-weight: 400 700; font-style: normal; }
   @page { size: A4; margin: 0; }
-  :root { --ink: #16181D; --body: #2B2E35; --muted: #5E6270; --accent: #B5650D; --rule: #E3DED3; --tint: #FBF6EC; }
+  :root { --ink: #14213D; --body: #2E323A; --muted: #5C6270; --accent: #1F3A5F; --rule: #C9D1DC; --tint: #F3F6F9; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { font: 400 8.75pt/1.44 "Inter", Arial, sans-serif; color: var(--body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .page { width: 210mm; height: 297mm; padding: 10mm 11mm 9mm 12mm; overflow: hidden; position: relative; }
-  .page::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3.2mm; background: var(--accent); }
+  body { font: 400 8.6pt/1.42 "Inter", Arial, sans-serif; color: var(--body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; padding: 11mm 12.5mm 10mm; overflow: hidden; }
   a { color: inherit; text-decoration: none; }
   h1, h2, h3, p, ul { margin: 0; padding: 0; }
 
   /* header */
-  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm; padding-bottom: 3.2mm; border-bottom: 1.2pt solid var(--ink); }
-  h1 { font: 600 25pt/1 "Fraunces", Georgia, serif; color: var(--ink); letter-spacing: -.4pt; font-variation-settings: "opsz" 144; }
-  h1 em { font-style: italic; font-weight: 500; color: var(--accent); }
-  .title { margin-top: 1.6mm; font-weight: 600; font-size: 9pt; color: var(--ink); }
-  .contact { text-align: right; font-size: 8.3pt; line-height: 1.55; color: var(--body); white-space: nowrap; }
-  .contact b { color: var(--accent); font-weight: 600; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm; padding-bottom: 3.4mm; border-bottom: 1.4pt solid var(--accent); }
+  h1 { font: 600 24pt/1 "Fraunces", Georgia, serif; color: var(--ink); letter-spacing: .2pt; font-variation-settings: "opsz" 72; }
+  .title { margin-top: 2mm; font-weight: 600; font-size: 9.6pt; letter-spacing: .2pt; color: var(--accent); }
+  .contact { text-align: right; font-size: 8.4pt; line-height: 1.6; color: var(--body); white-space: nowrap; }
+  .contact a { color: var(--body); }
+  .contact .lbl { color: var(--muted); }
+  .contact .link { color: var(--accent); font-weight: 600; }
 
   /* sections */
   section { margin-top: 4.3mm; }
-  h2 { display: flex; align-items: center; gap: 2.4mm; font: 700 8.3pt/1 "Inter", Arial, sans-serif; letter-spacing: .7pt; text-transform: uppercase; color: var(--accent); margin-bottom: 2.2mm; }
-  h2::after { content: ""; flex: 1; height: .6pt; background: var(--rule); }
-  .summary { font-size: 8.9pt; line-height: 1.46; }
-  .summary strong { color: var(--ink); }
+  h2 { font: 700 8.6pt/1 "Inter", Arial, sans-serif; letter-spacing: 1pt; text-transform: uppercase; color: var(--accent); padding-bottom: 1.4mm; margin-bottom: 2.2mm; border-bottom: .7pt solid var(--rule); }
+  .summary { font-size: 8.8pt; line-height: 1.48; }
+  .summary strong { color: var(--ink); font-weight: 600; }
 
-  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; margin-top: 3mm; }
-  .kpi { display: flex; align-items: baseline; gap: 1.6mm; background: var(--tint); border: .6pt solid #EADFC9; border-radius: 1.6mm; padding: 1.5mm 2.6mm; }
-  .kpi b { font: 600 12.5pt/1 "Fraunces", Georgia, serif; color: var(--ink); white-space: nowrap; }
-  .kpi span { font-size: 7.6pt; color: var(--muted); }
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 3mm; border: .7pt solid var(--rule); border-radius: 1.2mm; background: var(--tint); }
+  .kpi { padding: 2mm 3mm; text-align: center; }
+  .kpi + .kpi { border-left: .7pt solid var(--rule); }
+  .kpi b { display: block; font: 700 12pt/1.1 "Inter", Arial, sans-serif; color: var(--ink); }
+  .kpi span { font-size: 7.8pt; color: var(--muted); }
 
-  .job { margin-top: 2.7mm; }
+  .job { margin-top: 2.6mm; }
   .job:first-of-type { margin-top: 0; }
   .job__top { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
-  .job h3 { font: 600 9.8pt/1.25 "Inter", Arial, sans-serif; color: var(--ink); }
+  .job h3 { font: 700 9.8pt/1.25 "Inter", Arial, sans-serif; color: var(--ink); }
   .job h3 span { font-weight: 400; color: var(--muted); }
-  .date { font-size: 8.4pt; font-weight: 600; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .org { font-size: 8.5pt; color: var(--accent); font-weight: 600; margin-top: .3mm; }
+  .date { font-size: 8.6pt; font-weight: 600; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .org { font-size: 8.7pt; color: var(--accent); font-weight: 600; margin-top: .4mm; }
   .org span { color: var(--muted); font-weight: 400; }
-  ul { list-style: none; margin-top: 1.1mm; }
-  li { position: relative; padding-left: 3.6mm; margin-top: .7mm; }
-  li::before { content: ""; position: absolute; left: .4mm; top: 1.8mm; width: 1.5mm; height: .9pt; background: var(--accent); }
+  ul { list-style: none; margin-top: 1.2mm; }
+  li { position: relative; padding-left: 3.8mm; margin-top: .6mm; }
+  li::before { content: ""; position: absolute; left: .6mm; top: 1.65mm; width: 1.25mm; height: 1.25mm; border-radius: 50%; background: var(--accent); }
   li strong { color: var(--ink); font-weight: 600; }
 
   .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
-  .cols--even { grid-template-columns: 1.15fr .85fr; }
-  .skills p { margin-top: 1.5mm; }
+  .cols--wide { grid-template-columns: 1.35fr .65fr; }
+  .skills p { margin-top: 1.3mm; }
   .skills p:first-of-type { margin-top: 0; }
-  .skills b, .lbl { color: var(--ink); font-weight: 600; }
-  .item { margin-top: 1.8mm; }
+  .skills b { color: var(--ink); font-weight: 600; }
+  .item { margin-top: 1.6mm; }
   .item:first-of-type { margin-top: 0; }
   .item__top { display: flex; justify-content: space-between; gap: 3mm; }
   .item b { color: var(--ink); font-weight: 600; }
-  .item .r { white-space: nowrap; color: var(--ink); font-weight: 600; font-size: 8.3pt; }
-  .item .sub { color: var(--muted); font-size: 8.2pt; }
-  .tight li { margin-top: .6mm; }
-  footer { position: absolute; left: 12mm; right: 11mm; bottom: 7mm; display: flex; justify-content: space-between; font-size: 7.6pt; color: var(--muted); border-top: .6pt solid var(--rule); padding-top: 1.6mm; }
+  .item .r { white-space: nowrap; color: var(--ink); font-weight: 600; font-size: 8.5pt; }
+  .item .sub { color: var(--muted); font-size: 8.4pt; }
+  .tight { margin-top: 0; }
+  .tight li { margin-top: .7mm; }
+  .tight li:first-child { margin-top: 0; }
 </style>
 </head>
 <body>
 <div class="page">
   <header>
     <div>
-      <h1>Hemanshi <em>Dubey</em></h1>
-      <p class="title">B2B Sales Account Manager · Key Account Management</p>
+      <h1>Hemanshi Dubey</h1>
+      <p class="title">B2B Sales Account Manager &nbsp;|&nbsp; Key Account Management</p>
     </div>
     <div class="contact">
-      <a href="tel:+918650802050">+91 8650802050</a> &nbsp;·&nbsp; <a href="mailto:hemanshidubey71@gmail.com">hemanshidubey71@gmail.com</a><br>
+      <a href="tel:+918650802050">+91 86508 02050</a> &nbsp;|&nbsp; <a href="mailto:hemanshidubey71@gmail.com">hemanshidubey71@gmail.com</a><br>
       <a href="https://www.linkedin.com/in/hemanshi-dubey-42394a299">linkedin.com/in/hemanshi-dubey-42394a299</a><br>
-      <b>Portfolio:</b> <a href="https://hemanshiportfolio-mxp3.vercel.app"><b>hemanshiportfolio-mxp3.vercel.app</b></a><br>
-      Noida / Delhi NCR, India · Open to relocation
+      <span class="lbl">Portfolio:</span> <a class="link" href="https://hemanshiportfolio-mxp3.vercel.app">hemanshiportfolio-mxp3.vercel.app</a><br>
+      Noida / Delhi NCR, India &nbsp;|&nbsp; Open to relocation
     </div>
   </header>
 
   <section>
     <h2>Professional Summary</h2>
-    <p class="summary">B2B Sales Account Manager with <strong>2+ years</strong> of direct B2B and corporate sales across Indian real estate (Info Edge · 99acres.com) and US B2B markets (Etech Global Services). Manages a territory portfolio of enterprise-style accounts, driving renewals, upsells and account expansion at <strong>88% quota attainment</strong> and <strong>70% customer retention</strong>. Skilled in consultative selling, pipeline management, forecasting and Salesforce CRM; builds relationships that turn into repeat business.</p>
+    <p class="summary">Results-driven B2B Sales Account Manager with <strong>2+ years</strong> of direct B2B and corporate sales across Indian real estate (Info Edge – 99acres.com) and US B2B markets (Etech Global Services). Manages a territory portfolio of enterprise-style accounts, driving renewals, upsells and account expansion with <strong>88% quota attainment</strong> and <strong>70% customer retention</strong>. Skilled in consultative selling, pipeline management, sales forecasting and Salesforce CRM.</p>
     <div class="kpis">
-      <div class="kpi"><b>88%</b><span>quota attainment</span></div>
-      <div class="kpi"><b>70%</b><span>customer retention</span></div>
-      <div class="kpi"><b>2+ yrs</b><span>direct B2B sales</span></div>
-      <div class="kpi"><b>India &amp; US</b><span>markets</span></div>
+      <div class="kpi"><b>88%</b><span>Sales quota attainment</span></div>
+      <div class="kpi"><b>70%</b><span>Customer retention rate</span></div>
+      <div class="kpi"><b>2+ Years</b><span>Direct B2B sales</span></div>
     </div>
   </section>
 
@@ -95,53 +94,53 @@
     <h2>Professional Experience</h2>
     <div class="job">
       <div class="job__top"><h3>Senior Executive – Account Management</h3><p class="date">Jul 2025 – Present</p></div>
-      <p class="org">Info Edge (India) Ltd. · 99acres.com <span>| B2B Sales · Real Estate · Bangalore Territory</span></p>
+      <p class="org">Info Edge (India) Ltd. – 99acres.com <span>| B2B Sales, Real Estate | Bangalore Territory</span></p>
       <ul>
-        <li>Manage a territory of real estate developers, PropTech firms and property brokers, focused on retention and account growth.</li>
+        <li>Manage a territory portfolio of real estate developers, PropTech firms and brokers, focused on retention and account growth.</li>
         <li>Achieve <strong>88% sales quota attainment</strong> while maintaining a <strong>70% customer retention rate</strong> across all active accounts.</li>
-        <li>Drive renewals, upsells and expansion (incl. CAT-B and premium accounts) by matching client goals to the right solution.</li>
-        <li>Keep CRM records of activity, pipeline, renewal dates and forecasts accurate to flag churn risk early and act on it.</li>
-        <li>Began in new client acquisition (prospecting, meetings, solution presentations, closure) before moving to account growth.</li>
+        <li>Drive renewals, upsells and account expansion (incl. CAT-B and premium accounts) by aligning solutions to client goals.</li>
+        <li>Maintain accurate CRM records of pipeline, renewals and forecasts to identify churn risk early and act on it.</li>
+        <li>Progressed from new client acquisition (prospecting, presentations, deal closure) to account growth responsibilities.</li>
         <li>Received multiple written client commendations to the HOD for after-sales service and relationship management.</li>
       </ul>
     </div>
     <div class="job">
       <div class="job__top"><h3>Customer Acquisition Specialist</h3><p class="date">May 2024 – Jun 2025</p></div>
-      <p class="org">Etech Global Services <span>| B2B Sales · US Clients</span></p>
+      <p class="org">Etech Global Services <span>| B2B Sales | US Clients</span></p>
       <ul>
-        <li>Owned the full US sales cycle: lead generation, inbound/outbound prospecting, solution pitches, quotations and closure.</li>
+        <li>Owned the end-to-end sales cycle for US clients: lead generation, prospecting, solution pitches, quotations and closure.</li>
         <li>Consistently met acquisition targets through consultative, needs-based selling; <strong>Top Performer</strong> in ELSS sales training.</li>
-        <li>Tracked call volume, lead conversion and pipeline in Salesforce CRM; reported forecasts to management via MQO (OPUS).</li>
-        <li>Coordinated sales, operations and client success teams for smooth customer onboarding.</li>
+        <li>Managed call volume, lead conversion and pipeline in Salesforce CRM; reported forecasts to management (MQO, OPUS).</li>
+        <li>Coordinated with sales, operations and client success teams to ensure smooth customer onboarding.</li>
       </ul>
     </div>
     <div class="job">
       <div class="job__top"><h3>Admin Assistant <span>(Internship)</span></h3><p class="date">May 2023 – Apr 2024</p></div>
       <p class="org">Aarti Industries</p>
       <ul>
-        <li>Managed schedules and official correspondence; supported end-to-end recruitment coordination for the admin team.</li>
+        <li>Managed meeting schedules and correspondence; supported end-to-end recruitment coordination for the admin department.</li>
       </ul>
     </div>
   </section>
 
   <div class="cols">
     <section class="skills">
-      <h2>Core Skills</h2>
-      <p><b>Sales:</b> B2B &amp; Corporate Sales, Key Account Management, Direct Sales, Lead Generation, Prospecting, Deal Closure, Consultative &amp; Solution Selling, Upselling &amp; Cross-selling, Renewals, Account Expansion, Customer Retention, New Client Acquisition, Negotiation, Objection Handling</p>
-      <p><b>Planning &amp; Reporting:</b> Pipeline Management, Sales Forecasting, KPI Tracking, Target Achievement, Sales Reporting, Quotation Building, MQO Management</p>
-      <p><b>Tools:</b> Salesforce CRM, OPUS, MS Office (Excel, PowerPoint, Word), Tally ERP 9, Email &amp; Live Chat</p>
-      <p><b>Professional:</b> Stakeholder &amp; Client Relationship Management, Presentation &amp; Public Speaking, Training &amp; Mentoring</p>
+      <h2>Core Competencies</h2>
+      <p><b>Sales:</b> B2B &amp; Corporate Sales, Key Account Management, Lead Generation, Deal Closure, Consultative Selling, Upselling &amp; Cross-selling, Renewals, Customer Retention, Negotiation</p>
+      <p><b>Planning &amp; Reporting:</b> Pipeline Management, Sales Forecasting, KPI Tracking, Sales Reporting, Quotation Building, MQO</p>
+      <p><b>Tools:</b> Salesforce CRM, OPUS, MS Office, Tally ERP 9</p>
+      <p><b>Professional:</b> Stakeholder Management, Presentations, Public Speaking, Training &amp; Mentoring</p>
     </section>
     <div>
       <section>
         <h2>Education</h2>
         <div class="item">
-          <div class="item__top"><b>MBA – Marketing <span class="sub">(distance, pursuing)</span></b><span class="r">2024 – Present</span></div>
+          <div class="item__top"><b>MBA – Marketing <span class="sub">(Distance, pursuing)</span></b><span class="r">2024 – Present</span></div>
           <p class="sub">BSA College of Engineering &amp; Technology, Mathura</p>
         </div>
         <div class="item">
-          <div class="item__top"><b>B.Com (Hons) – 89%</b><span class="r">2024</span></div>
-          <p class="sub">BSA College of Engg. &amp; Tech., Mathura (Dr. Bhimrao Ambedkar University, Agra)</p>
+          <div class="item__top"><b>Bachelor of Commerce (Hons) – 89%</b><span class="r">2024</span></div>
+          <p class="sub">BSA College of Engineering &amp; Technology, Mathura (Dr. Bhimrao Ambedkar University, Agra)</p>
         </div>
         <div class="item">
           <div class="item__top"><b>Class XII (CBSE) – 95.6%, 2nd rank in school</b><span class="r">2021</span></div>
@@ -150,20 +149,20 @@
       </section>
       <section>
         <h2>Certifications</h2>
-        <ul class="tight" style="margin-top:0">
-          <li><strong>ELSS Sales Training</strong> – Top Performer (Etech Global)</li>
-          <li><strong>Marketing of Brand</strong> · <strong>Creating Customer Value</strong> – upGrad</li>
-          <li><strong>Tally ERP 9</strong> Certified User · <strong>3D Packaging</strong> Certified</li>
+        <ul class="tight">
+          <li><strong>ELSS Sales Training</strong> – Top Performer (Etech)</li>
+          <li><strong>Marketing of Brand</strong>; <strong>Creating Customer Value</strong> – upGrad</li>
+          <li><strong>Tally ERP 9</strong> Certified User; <strong>3D Packaging</strong> Certified</li>
         </ul>
       </section>
     </div>
   </div>
 
-  <div class="cols cols--even">
+  <div class="cols cols--wide">
     <section>
       <h2>Leadership &amp; Activities</h2>
-      <ul class="tight" style="margin-top:0">
-        <li><strong>Team Lead, Amul CSR</strong> – led a 12-member team</li>
+      <ul class="tight">
+        <li><strong>Team Lead, Amul CSR</strong> – led a 12-member community engagement team</li>
         <li><strong>Teaching Coordinator, Myskylit Academy</strong> – team of 18, 16 weeks</li>
         <li><strong>Soft Skills Trainer</strong> – RCA Girls Inter College, Mathura (certified)</li>
         <li><strong>MDH Masale CSR</strong> – community outreach and brand engagement</li>
@@ -171,18 +170,13 @@
     </section>
     <section>
       <h2>Languages</h2>
-      <ul class="tight" style="margin-top:0">
-        <li><strong>English</strong> – Professional working proficiency</li>
-        <li><strong>Hindi</strong> – Native / full professional proficiency</li>
+      <ul class="tight">
+        <li><strong>English</strong> – Professional</li>
+        <li><strong>Hindi</strong> – Native</li>
         <li><strong>Spanish</strong> – Elementary</li>
       </ul>
     </section>
   </div>
-
-  <footer>
-    <span>References available on request</span>
-    <span>See the portfolio and 12-second reel at <a href="https://hemanshiportfolio-mxp3.vercel.app">hemanshiportfolio-mxp3.vercel.app</a></span>
-  </footer>
 </div>
 </body>
 </html>
